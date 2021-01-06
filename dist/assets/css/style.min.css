@@ -498,20 +498,22 @@ a {
   font-family: Rubik, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #1a212f;
+  color: #fffefd;
   border-radius: 25px;
   box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
-  background-color: #fffefd;
+  background-color: #ff7236;
   border: none;
-  padding: 7px 7px 7px 30px; }
+  padding: 7px 7px 7px 30px;
+  transition: all 0.2s linear; }
 
 .btn-book__paw {
   position: relative;
   width: 36px;
   height: 36px;
-  background-color: #ff7236;
+  background-color: #fffefd;
   border-radius: 50%;
-  margin-left: 20px; }
+  margin-left: 20px;
+  transition: inherit; }
 
 .paw-icon {
   position: absolute;
@@ -521,4 +523,83 @@ a {
   transform: translate(-50%, -50%);
   width: 21px;
   height: 18px;
-  fill: #fffefd; }
+  fill: #ff7236;
+  transition: inherit; }
+
+.btn-book--white {
+  background-color: #fffefd;
+  color: #1a212f;
+  transition: all 0.2s linear; }
+  .btn-book--white .btn-book__paw {
+    background-color: #ff7236;
+    transition: inherit; }
+  .btn-book--white .paw-icon {
+    fill: #fffefd;
+    transition: inherit; }
+
+.btn-book:hover {
+  background-color: #fffefd;
+  color: #1a212f; }
+  .btn-book:hover .btn-book__paw {
+    background-color: #ff7236; }
+  .btn-book:hover .paw-icon {
+    fill: #fffefd; }
+
+.btn-book--white:hover {
+  background-color: #ff7236;
+  color: #fffefd; }
+  .btn-book--white:hover .btn-book__paw {
+    background-color: #fffefd; }
+  .btn-book--white:hover .paw-icon {
+    fill: #ff7236; }
+
+.section-title {
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #1a212f;
+  text-align: center;
+  margin-bottom: 70px; }
+
+.benefits {
+  margin-top: 140px; }
+
+.benefits__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.benefits__item {
+  max-width: 370px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+  background-color: #fff; }
+
+.benefits__item-img {
+  position: relative;
+  width: 91px;
+  height: 91px;
+  background-color: #fac663;
+  border-radius: 50%;
+  fill: #fffefd;
+  margin-bottom: 35px; }
+
+.item-img__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%); }
+
+.benefits__item-title {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 20px; }
+
+.benefits__item-text {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
