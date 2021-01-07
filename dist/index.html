@@ -115,6 +115,10 @@
                 d="M23.4859 31.5934H20.4355C20.2592 31.5934 20.09 31.6583 19.9646 31.7742L17.8577 33.7198L12.7092 28.9061C12.6106 28.5627 12.5608 28.208 12.5608 27.8495C12.5608 25.608 14.5111 23.7844 16.9086 23.7844C16.9482 23.7844 16.9869 23.7806 17.0247 23.7744H22.9142C23.2842 23.7744 23.5842 23.4939 23.5842 23.1479C23.5842 22.8019 23.2842 22.5214 22.9142 22.5214H16.3785C16.2701 22.5214 16.168 22.546 16.0775 22.5888C13.3914 22.9582 11.3115 25.0892 11.2252 27.6822L10.6836 27.1759C10.422 26.9312 9.99768 26.9312 9.7361 27.1759L6.18599 30.4952C6.16312 30.5165 6.14302 30.5393 6.12426 30.5628L0.180915 36.7796C0.0713839 36.8941 0.0107221 37.0423 0.0104541 37.1959L1.27858e-06 42.3436C-0.000713442 42.6894 0.298308 42.9703 0.668175 42.9713L11.7102 43H11.7121C11.8898 43 12.0602 42.934 12.1859 42.8165L19.3252 36.1413C19.4509 36.0239 19.5215 35.8645 19.5215 35.6983C19.5215 35.5322 19.4509 35.3728 19.3252 35.2554L18.7175 34.6872L20.7108 32.8465H23.4862C23.8562 32.8465 24.1562 32.566 24.1562 32.22C24.1559 31.8739 23.8559 31.5934 23.4859 31.5934ZM11.4351 41.7462L1.34117 41.7199L1.34993 37.4366L6.68934 31.8517L14.3535 39.0176L11.4351 41.7462ZM15.3419 38.0934L7.64813 30.8998L10.2098 28.5047L17.9036 35.6983L15.3419 38.0934Z" />
         </symbol>
     
+        <symbol id="arrow" viewBox="0 0 6 10">
+            <path d="M5.00049 1L1.00049 5L5.00049 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+    
     
     </svg>
     <div class="page">
@@ -254,6 +258,95 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            
+            <section class="rooms">
+                <h2 class="section-title">Номера</h2>
+                <div class="rooms__wrapper">
+            
+                    <button class="rooms__arrow rooms__arrow--prev" id="rooms-arrow-prev" type="button">
+                        <svg class="rooms__arrow-icon">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </button>
+            
+                    <button class="rooms__arrow rooms__arrow--next" id="rooms-arrow-next" type="button">
+                        <svg class="rooms__arrow-icon rooms__arrow-icon--next">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </button>
+            
+                    <div class="rooms__slider">
+                        <div class="rooms__item">
+                            <img class="rooms__item-img" src="/assets/images/rooms/slider-economplus.jpg" alt="">
+                            <div class="rooms-item__content">
+                                <div class="rooms-item__title">Эконом плюс</div>
+                                <div class="rooms-item__desc">
+                                    <ul class="rooms-item__desc-list">
+                                        <li class="desc-list__item">Площадь - 0,90 м2</li>
+                                        <li class="desc-list__item">Размеры (ШхГхВ) — 90х100х180 см</li>
+                                        <li class="desc-list__item">Цена за сутки: 200 <span class="rub">Р</span></li>
+                                    </ul>
+                                </div>
+                                <button class="btn-book">
+                                    Забронировать
+                                    <div class="btn-book__paw">
+                                        <svg class="paw-icon">
+                                            <use xlink:href="#paw-icon"></use>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+            
+                        <div class="rooms__item">
+                            <img class="rooms__item-img" src="/assets/images/rooms/slider-comfort.jpg" alt="">
+                            <div class="rooms-item__content">
+                                <div class="rooms-item__title">Комфорт</div>
+                                <div class="rooms-item__desc">
+                                    <ul class="rooms-item__desc-list">
+                                        <li class="desc-list__item">Площадь - 1,13 м2</li>
+                                        <li class="desc-list__item">Размеры (ШхГхВ) - 100х125х180 см</li>
+                                        <li class="desc-list__item">Цена за сутки: 250 <span class="rub">Р</span></li>
+                                    </ul>
+                                </div>
+                                <button class="btn-book">
+                                    Забронировать
+                                    <div class="btn-book__paw">
+                                        <svg class="paw-icon">
+                                            <use xlink:href="#paw-icon"></use>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+            
+                        <div class="rooms__item">
+                            <img class="rooms__item-img" src="/assets/images/rooms/slider-suite.jpg" alt="">
+                            <div class="rooms-item__content">
+                                <div class="rooms-item__title">Сьют</div>
+                                <div class="rooms-item__desc">
+                                    <ul class="rooms-item__desc-list">
+                                        <li class="desc-list__item">Площадь - 1,56 м2</li>
+                                        <li class="desc-list__item">Размеры (ШхГхВ) - 125х125х180 см</li>
+                                        <li class="desc-list__item">Цена за сутки: 350 <span class="rub">Р</span></li>
+                                    </ul>
+                                </div>
+                                <button class="btn-book">
+                                    Забронировать
+                                    <div class="btn-book__paw">
+                                        <svg class="paw-icon">
+                                            <use xlink:href="#paw-icon"></use>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+            
             </section>
 
         </main>

@@ -196,6 +196,15 @@ function jsWatch(cb) {
         },
       })
     )
+    .pipe(rigger())
+    .pipe(gulp.dest(path.build.js))
+    .pipe(uglify())
+    .pipe(
+      rename({
+        suffix: ".min",
+        extname: ".js",
+      })
+    )
     .pipe(dest(path.build.js))
     .pipe(browserSync.reload({ stream: true }));
 

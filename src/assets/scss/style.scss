@@ -30,7 +30,7 @@ a {
   }
 }
 
-/* Blocks // @import "blocks/name"; */
+/* Blocks */
 
 @import "blocks/page";
 @import "blocks/container";
@@ -40,3 +40,9 @@ a {
 @import "blocks/btn-book";
 @import "blocks/section-title";
 @import "blocks/benefits";
+@import "blocks/rooms";
+@import "blocks/rub";
+
+/* Vendors */
+
+@import "vendor/slick";

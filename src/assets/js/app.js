@@ -1,3 +1,7 @@
-//= components/slick.js
+//= ../../../node_modules/slick-carousel/slick/slick.js
 
-console.log("file 1");
+$(function () {
+  //= components/slick.js
+
+  console.log("file 3");
+});

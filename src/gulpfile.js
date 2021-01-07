@@ -82,6 +82,17 @@ function html(cb) {
 function css(cb) {
   return src(path.src.css, { base: srcPath + "assets/scss/" })
     .pipe(
+      plumber({
+        errorHandler: function (err) {
+          notify.onError({
+            title: "SCSS Error",
+            message: "Error: <%= error.message %>",
+          })(err);
+          this.emit("end");
+        },
+      })
+    )
+    .pipe(
       sass({
         includePaths: "./node_modules/",
       })
@@ -183,6 +194,15 @@ function jsWatch(cb) {
           })(err);
           this.emit("end");
         },
+      })
+    )
+    .pipe(rigger())
+    .pipe(gulp.dest(path.build.js))
+    .pipe(uglify())
+    .pipe(
+      rename({
+        suffix: ".min",
+        extname: ".js",
       })
     )
     .pipe(dest(path.build.js))
