@@ -614,7 +614,8 @@ a {
   position: relative;
   width: 100%;
   max-width: 1150px;
-  padding: 0 10px;
+  padding-right: 10px;
+  padding-left: 45px;
   margin: 0 auto; }
 
 .rooms__item {
@@ -669,39 +670,70 @@ a {
     z-index: 1;
     transform: translateY(-50%); }
 
-.rooms__arrow {
-  position: absolute;
-  right: 13%;
-  bottom: -16%;
-  z-index: 1;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: #fff;
-  border: none;
-  box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
-  transition: all 0.2s linear; }
-  .rooms__arrow--next {
-    right: 9%; }
-  .rooms__arrow:hover {
-    background-color: #ff7236; }
-    .rooms__arrow:hover .rooms__arrow-icon {
-      stroke: #fffefd; }
-
-.rooms__arrow-icon {
-  width: 4px;
-  height: 8px;
-  fill: transparent;
-  stroke: #ff7236; }
-  .rooms__arrow-icon--next {
-    transform: rotate(180deg); }
-
 .rub {
   font-family: Rubik, sans-serif;
   line-height: 5px;
   width: 0.4em;
   border-bottom: 1px solid #1a212f;
   display: inline-block; }
+
+.reviews {
+  position: relative;
+  width: 100%;
+  padding-top: 140px;
+  margin-bottom: 70px;
+  background: url(../../assets/images/reviews/reviews-bg.svg) no-repeat top right;
+  height: 520px; }
+
+.reviews__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1386px;
+  margin: 0 auto;
+  padding-left: 10px; }
+
+.reviews-arrow__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto; }
+
+.reviews__item {
+  width: 100%;
+  max-width: 470px;
+  padding: 35px;
+  margin-right: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px; }
+
+.reviews-item__wrapper {
+  position: relative;
+  padding-left: 35px; }
+
+.reviews-item__icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 21px;
+  height: 23px;
+  fill: #fac663; }
+
+.reviews-item__text {
+  position: relative;
+  font-family: Rubik, sans-serif;
+  color: #1a212f;
+  font-weight: 400;
+  margin-bottom: 25px; }
+
+.reviews-item__info {
+  display: flex;
+  justify-content: space-between;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  color: #848484; }
 
 /* Vendors */
 /* Slider */
@@ -795,4 +827,42 @@ a {
     border-radius: 50%;
     border: none;
     background-color: #e1e1e1;
+    color: transparent;
     margin-right: 12px; }
+
+.slick__arrow {
+  position: absolute;
+  right: 150px;
+  bottom: -16%;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+  transition: all 0.2s linear; }
+  .slick__arrow--next {
+    right: 100px; }
+  .slick__arrow:hover {
+    background-color: #ff7236; }
+    .slick__arrow:hover .slick__arrow-icon {
+      stroke: #fffefd; }
+
+.slick__arrow-icon {
+  width: 4px;
+  height: 8px;
+  fill: transparent;
+  stroke: #ff7236; }
+  .slick__arrow-icon--next {
+    transform: rotate(180deg); }
+
+.reviews__slider .slick-slide {
+  padding: 20px 10px; }
+
+/* Reviews */
+.reviews__slider .slick-dots {
+  padding-left: 30px; }
+
+.reviews .slick__arrow {
+  bottom: -70px; }
