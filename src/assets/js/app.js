@@ -5,3 +5,5 @@ $(function () {
 
   console.log("file 3");
 });
+
+//= components/map.js
