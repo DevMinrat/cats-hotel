@@ -10,7 +10,7 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
-    <title>Главная страница</title>
+    <title>Наши номера</title>
     
     <link href="https://fonts.googleapis.com/css?family=Lato:regular,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,600,700" rel="stylesheet" />
@@ -190,303 +190,141 @@
         </div>
 
         <!-- Main content -->
-        <main>
 
-            
-            <div class="intro">
-                <div class="intro__wrapper">
-                    <div class="intro__inner">
-                        <div class="intro__suptitle-city">
-                            Санкт-Петербург
-                        </div>
-                        <div class="intro__suptitle-name">
-                            Котейка
-                        </div>
-                        <h1 class="intro__title">
-                            Уютная гостиница для котов и кошек
-                        </h1>
-            
-                        <button class="btn-book btn-book--white">
-                            Забронировать
-                            <div class="btn-book__paw">
-                                <svg class="paw-icon">
-                                    <use xlink:href="#paw-icon"></use>
-                                </svg>
-                            </div>
-                        </button>
+        
+        <div class="catalog">
+            <div class="container">
+                <div class="catalog__header">
+                    <h1 class="catalog__title">Наши номера</h1>
+                    <div class="catalog__sort">
+                        <select>
+                            <option class="arrow-up" value="square-up">
+                                По площади
+                            </option>
+                            <option class="arrow-down" value="square-down">По площади</option>
+                            <option class="arrow-up" value="price-up">По цене</option>
+                            <option class="arrow-down" value="price-down">По цене</option>
+                        </select>
                     </div>
+                </div>
+        
+                <div class="catalog__inner">
+                    <aside class="catalog__aside">
+                        <form class="catalog__aside-form">
+                            <div class="aside-form__group">
+                                <p class="aside-form__title">Цена за сутки, <span class="rub">Р</span></p>
+                                <input class="aside-form__range" type="text" placeholder="от 100">
+                                <input class="aside-form__range" type="text" placeholder="до 600">
+                            </div>
+        
+                            <div class="aside-form__group">
+                                <p class="aside-form__title">Площадь</p>
+                                <div class="aside-form__content-box">
+        
+                                    <div class="checkbox">
+                                        <input class="content-checkbox" type="checkbox" id="size-1" name="size-1" value="0,63">
+                                        <label class="aside-form__content-label checkbox--fake" for="size-1">
+                                            0,63 м2
+                                        </label>
+                                    </div>
+        
+                                    <div class="checkbox">
+                                        <input class="content-checkbox" type="checkbox" id="size-2" name="size-2" value="0,90"
+                                            disabled>
+                                        <label class="aside-form__content-label checkbox--fake" for="size-2">
+                                            0,90 м2
+                                        </label>
+                                    </div>
+        
+                                    <div class="checkbox">
+                                        <input class="content-checkbox" type="checkbox" id="size-3" name="size-3" value="1,13">
+                                        <label class="aside-form__content-label checkbox--fake" for="size-3">
+                                            1,13 м2
+                                        </label>
+                                    </div>
+        
+                                    <div class="checkbox">
+                                        <input class="content-checkbox" type="checkbox" id="size-4" name="size-4" value="1,56">
+                                        <label class="aside-form__content-label checkbox--fake" for="size-4">
+                                            1,56 м2
+                                        </label>
+                                    </div>
+        
+                                    <div class="checkbox">
+                                        <input class="content-checkbox" type="checkbox" id="size-5" name="size-5" value="2,56">
+                                        <label class="aside-form__content-label checkbox--fake" for="size-5">
+                                            2,56 м2
+                                        </label>
+                                    </div>
+        
+                                    <div class="checkbox">
+                                        <input class="content-checkbox" type="checkbox" id="size-6" name="size-6" value="2,88">
+                                        <label class="aside-form__content-label checkbox--fake" for="size-6">
+                                            2,88 м2
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="aside-form__group">
+                                <p class="aside-form__title">Оснащение номера</p>
+                                <div class="aside-form__content-box">
+        
+                                    <div class="checkbox">
+                                        <input class="content-checkbox" type="checkbox" id="equip-1" name="equip-1"
+                                            value="Пустой номер">
+                                        <label class="aside-form__content-label checkbox--fake" for="equip-1">
+                                            Пустой номер
+                                        </label>
+                                    </div>
+        
+                                    <div class="checkbox">
+                                        <input class="content-checkbox" type="checkbox" id="equip-2" name="equip-2"
+                                            value="Лежак">
+                                        <label class="aside-form__content-label checkbox--fake" for="equip-2">
+                                            Лежак
+                                        </label>
+                                    </div>
+        
+                                    <div class="checkbox">
+                                        <input class="content-checkbox" type="checkbox" id="equip-3" name="equip-3"
+                                            value="Когтеточка">
+                                        <label class="aside-form__content-label checkbox--fake" for="equip-3">
+                                            Когтеточка
+                                        </label>
+                                    </div>
+        
+                                    <div class="checkbox">
+                                        <input class="content-checkbox" type="checkbox" id="equip-4" name="equip-4"
+                                            value="Игровой-комплекс">
+                                        <label class="aside-form__content-label checkbox--fake" for="equip-4">
+                                            Игровой-комплекс
+                                        </label>
+                                    </div>
+        
+                                    <div class="checkbox">
+                                        <input class="content-checkbox" type="checkbox" id="equip-5" name="equip-5"
+                                            value="Домик">
+                                        <label class="aside-form__content-label checkbox--fake" for="equip-5">
+                                            Домик
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <button class="aside-form__btn aside-form__btn--submit" type="submit">Применить</button>
+                            <button class="aside-form__btn aside-form__btn--reset" type="reset">Сбросить фильтр</button>
+                        </form>
+                    </aside>
+        
+                    <main class="catalog__content">
+                        <div class="catalog__content-item">
+        
+                        </div>
+                    </main>
                 </div>
             </div>
-            
-            <section class="benefits">
-                <div class="container">
-                    <h2 class="section-title">Почему мы?</h2>
-                    <div class="benefits__inner">
-                        <div class="benefits__item">
-                            <div class="benefits__item-img">
-                                <svg class="item-img__icon" width="31" height="53">
-                                    <use xlink:href="#therm"></use>
-                                </svg>
-                            </div>
-                            <h3 class="benefits__item-title">Комфортная температура</h3>
-                            <p class="benefits__item-text">Во всех номерах поддерживается комфортная температура в пределах
-                                23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.
-                            </p>
-                        </div>
-            
-                        <div class="benefits__item">
-                            <div class="benefits__item-img">
-                                <svg class="item-img__icon" width="47" height="37">
-                                    <use xlink:href="#camera"></use>
-                                </svg>
-                            </div>
-                            <h3 class="benefits__item-title">Видеонаблюдение</h3>
-                            <p class="benefits__item-text">Мы предоставляем доступ в нашу систему. Вы сможете следить
-                                за своим питомцем со своего смартфона или компьютера.
-                            </p>
-                        </div>
-            
-                        <div class="benefits__item">
-                            <div class="benefits__item-img">
-                                <svg class="item-img__icon" width="51" height="31">
-                                    <use xlink:href="#taxi"></use>
-                                </svg>
-                            </div>
-                            <h3 class="benefits__item-title">Услуги Зоотакси</h3>
-                            <p class="benefits__item-text">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.
-                            </p>
-                        </div>
-            
-                        <div class="benefits__item">
-                            <div class="benefits__item-img">
-                                <svg class="item-img__icon" width="53" height="35" fill="none">
-                                    <use xlink:href="#fish"></use>
-                                </svg>
-                            </div>
-                            <h3 class="benefits__item-title">Сбалансированное питание</h3>
-                            <p class="benefits__item-text">Вы можете привезти свой корм или доверить рацион своего питомца нашим
-                                профессионалам.
-                            </p>
-                        </div>
-            
-                        <div class="benefits__item">
-                            <div class="benefits__item-img">
-                                <svg class="item-img__icon" width="47" height="39">
-                                    <use xlink:href="#cat"></use>
-                                </svg>
-                            </div>
-                            <h3 class="benefits__item-title">Ежедневные прогулки</h3>
-                            <p class="benefits__item-text">По вашему желанию мы выгуливаем вашего питомца два раза в день
-                                на специализированной закрытой территории.</p>
-                        </div>
-            
-                        <div class="benefits__item">
-                            <div class="benefits__item-img">
-                                <svg class="item-img__icon" width="41" height="43">
-                                    <use xlink:href="#vet"></use>
-                                </svg>
-                            </div>
-                            <h3 class="benefits__item-title">Лучшие ветеринары</h3>
-                            <p class="benefits__item-text">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую
-                                помощь в случае необходимости.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="rooms">
-                <h2 class="section-title">Номера</h2>
-                <div class="rooms__wrapper">
-                    <div class="rooms__slider">
-                        <div class="rooms__item">
-                            <img class="rooms__item-img" src="/assets/images/rooms/slider-economplus.jpg" alt="">
-                            <div class="rooms-item__content">
-                                <div class="rooms-item__title">Эконом плюс</div>
-                                <div class="rooms-item__desc">
-                                    <ul class="rooms-item__desc-list">
-                                        <li class="desc-list__item">Площадь - 0,90 м2</li>
-                                        <li class="desc-list__item">Размеры (ШхГхВ) — 90х100х180 см</li>
-                                        <li class="desc-list__item">Цена за сутки: 200 <span class="rub">Р</span></li>
-                                    </ul>
-                                </div>
-                                <button class="btn-book">
-                                    Забронировать
-                                    <div class="btn-book__paw">
-                                        <svg class="paw-icon">
-                                            <use xlink:href="#paw-icon"></use>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-            
-                        <div class="rooms__item">
-                            <img class="rooms__item-img" src="/assets/images/rooms/slider-comfort.jpg" alt="">
-                            <div class="rooms-item__content">
-                                <div class="rooms-item__title">Комфорт</div>
-                                <div class="rooms-item__desc">
-                                    <ul class="rooms-item__desc-list">
-                                        <li class="desc-list__item">Площадь - 1,13 м2</li>
-                                        <li class="desc-list__item">Размеры (ШхГхВ) - 100х125х180 см</li>
-                                        <li class="desc-list__item">Цена за сутки: 250 <span class="rub">Р</span></li>
-                                    </ul>
-                                </div>
-                                <button class="btn-book">
-                                    Забронировать
-                                    <div class="btn-book__paw">
-                                        <svg class="paw-icon">
-                                            <use xlink:href="#paw-icon"></use>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-            
-                        <div class="rooms__item">
-                            <img class="rooms__item-img" src="/assets/images/rooms/slider-suite.jpg" alt="">
-                            <div class="rooms-item__content">
-                                <div class="rooms-item__title">Сьют</div>
-                                <div class="rooms-item__desc">
-                                    <ul class="rooms-item__desc-list">
-                                        <li class="desc-list__item">Площадь - 1,56 м2</li>
-                                        <li class="desc-list__item">Размеры (ШхГхВ) - 125х125х180 см</li>
-                                        <li class="desc-list__item">Цена за сутки: 350 <span class="rub">Р</span></li>
-                                    </ul>
-                                </div>
-                                <button class="btn-book">
-                                    Забронировать
-                                    <div class="btn-book__paw">
-                                        <svg class="paw-icon">
-                                            <use xlink:href="#paw-icon"></use>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <button class="slick__arrow slick__arrow--prev" id="rooms-arrow-prev" type="button">
-                        <svg class="slick__arrow-icon">
-                            <use xlink:href="#arrow"></use>
-                        </svg>
-                    </button>
-            
-                    <button class="slick__arrow slick__arrow--next" id="rooms-arrow-next" type="button">
-                        <svg class="slick__arrow-icon slick__arrow-icon--next">
-                            <use xlink:href="#arrow"></use>
-                        </svg>
-                    </button>
-            
-                </div>
-            </section>
-            <section class="reviews">
-                <h2 class="section-title">Отзывы</h2>
-            
-                <div class="reviews__wrapper">
-                    <div class="reviews__slider">
-                        <div class="reviews__item">
-                            <div class="reviews-item__wrapper">
-                                <svg class="reviews-item__icon">
-                                    <use xlink:href="#quote-icon"></use>
-                                </svg>
-                                <p class="reviews-item__text">Первый раз пришлось оставить нашего котика
-                                    в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
-                                    рассказывала, как он себя чувствует.
-                                    И мы и котик остались очень довольны!
-                                </p>
-                                <div class="reviews-item__info">
-                                    <p>Валерия Гришаева</p>
-                                    <p>15 ноября, 2020</p>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="reviews__item">
-                            <div class="reviews-item__wrapper">
-                                <svg class="reviews-item__icon">
-                                    <use xlink:href="#quote-icon"></use>
-                                </svg>
-                                <p class="reviews-item__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют
-                                    здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице
-                                    очень чисто. Всем рекомендую! Будем обращаться еще.
-                                </p>
-                                <div class="reviews-item__info">
-                                    <p>Екатерина Минаева</p>
-                                    <p>10 октября, 2019</p>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="reviews__item">
-                            <div class="reviews-item__wrapper">
-                                <svg class="reviews-item__icon">
-                                    <use xlink:href="#quote-icon"></use>
-                                </svg>
-                                <p class="reviews-item__text">Первый раз пришлось оставить нашего котика
-                                    в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
-                                    рассказывала, как он себя чувствует.
-                                    И мы и котик остались очень довольны!
-                                </p>
-                                <div class="reviews-item__info">
-                                    <p>Валерия Гришаева</p>
-                                    <p>15 ноября, 2020</p>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="reviews__item">
-                            <div class="reviews-item__wrapper">
-                                <svg class="reviews-item__icon">
-                                    <use xlink:href="#quote-icon"></use>
-                                </svg>
-                                <p class="reviews-item__text">Первый раз пришлось оставить нашего котика
-                                    в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
-                                    рассказывала, как он себя чувствует.
-                                    И мы и котик остались очень довольны!
-                                </p>
-                                <div class="reviews-item__info">
-                                    <p>Валерия Гришаева</p>
-                                    <p>15 ноября, 2020</p>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="reviews__item">
-                            <div class="reviews-item__wrapper">
-                                <svg class="reviews-item__icon">
-                                    <use xlink:href="#quote-icon"></use>
-                                </svg>
-                                <p class="reviews-item__text">Первый раз пришлось оставить нашего котика
-                                    в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
-                                    рассказывала, как он себя чувствует.
-                                    И мы и котик остались очень довольны!
-                                </p>
-                                <div class="reviews-item__info">
-                                    <p>Валерия Гришаева</p>
-                                    <p>15 ноября, 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="reviews-arrow__wrapper">
-                    <button class="slick__arrow slick__arrow--prev" id="reviews-arrow-prev" type="button">
-                        <svg class="slick__arrow-icon">
-                            <use xlink:href="#arrow"></use>
-                        </svg>
-                    </button>
-            
-                    <button class="slick__arrow slick__arrow--next" id="reviews-arrow-next" type="button">
-                        <svg class="slick__arrow-icon slick__arrow-icon--next">
-                            <use xlink:href="#arrow"></use>
-                        </svg>
-                    </button>
-                </div>
-            </section>
-
-        </main>
+        </div>
 
         <!-- Footer -->
         <footer class="footer">

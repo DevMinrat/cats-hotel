@@ -31,6 +31,10 @@ a {
   }
 }
 
+button:focus {
+  outline: 1px dotted $secondary;
+}
+
 /* Blocks */
 
 @import "blocks/page";
@@ -45,7 +49,10 @@ a {
 @import "blocks/rub";
 @import "blocks/reviews";
 @import "blocks/footer";
+@import "blocks/catalog";
+@import "blocks/catalog-aside";
 
 /* Vendors */
 
 @import "vendor/slick";
+@import "vendor/formstyler";

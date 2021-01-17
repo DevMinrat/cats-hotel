@@ -1,0 +1,157 @@
+.catalog__aside {
+  width: 100%;
+  max-width: 280px;
+
+  padding: 0 30px;
+}
+
+.aside-form__group {
+  margin-bottom: 35px;
+}
+
+.aside-form__title {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $black;
+
+  margin-bottom: 20px;
+  max-width: 245px;
+}
+
+.aside-form__range {
+  width: 100%;
+  max-width: 100px;
+
+  border: 1px solid #e1e1e1;
+  padding: 7px;
+}
+
+.aside-form__range + .aside-form__range {
+  margin-left: 10px;
+}
+
+.aside-form__range::placeholder {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $black;
+}
+
+.aside-form__content-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-form__content-label {
+  position: relative;
+
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+  cursor: pointer;
+
+  padding-left: 30px;
+
+  user-select: none;
+}
+
+.checkbox + .checkbox {
+  margin-top: 15px;
+}
+
+.content-checkbox {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+}
+
+.checkbox--fake::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 3;
+  left: 0;
+
+  border: 1px solid #e1e1e1;
+}
+
+.content-checkbox:checked + .checkbox--fake::before {
+  background: url(/assets/images/checked.svg) no-repeat center;
+}
+
+.content-checkbox:not(:disabled):active + .checkbox--fake::before {
+  background-color: lighten($primary, 20%);
+  border: 1px solid $primary;
+}
+
+.content-checkbox:focus + .checkbox--fake::before {
+  box-shadow: 0 0 0 2px lighten($primary, 20%);
+}
+
+.content-checkbox:focus + .checkbox--fake::before {
+  box-shadow: 0 0 0 2px lighten($primary, 20%);
+}
+
+.content-checkbox:not(:disabled):hover + .checkbox--fake::before {
+  border: 1px solid $primary;
+}
+
+.content-checkbox:disabled + .checkbox--fake,
+.checkbox--fake::before {
+  cursor: auto;
+}
+
+.content-checkbox:disabled + .checkbox--fake::before {
+  background-color: rgb(218, 216, 216);
+  cursor: auto;
+}
+
+.aside-form__btn {
+  width: 100%;
+  max-width: 185px;
+  height: 42px;
+
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $black;
+
+  border: 2px solid #fac663;
+  border-radius: 25px;
+}
+
+.aside-form__btn--submit {
+  background: #fac663;
+
+  margin-bottom: 15px;
+}
+
+.aside-form__btn--reset {
+  background: $white;
+}
+
+.aside-form__btn--submit:hover,
+.aside-form__btn--reset:hover {
+  background: lighten($primary, 10%);
+}
+
+.aside-form__btn--submit:active,
+.aside-form__btn--reset:active {
+  background: darken($primary, 10%);
+  border: 2px solid darken($primary, 10%);
+}
+
+.aside-form__btn--submit:focus,
+.aside-form__btn--reset:focus {
+  box-shadow: 0 0 3px 1px darken($primary, 30%);
+  outline: none;
+}

@@ -1,0 +1,138 @@
+---
+layout: with-sidebar
+title: Наши номера
+---
+
+<div class="catalog">
+    <div class="container">
+        <div class="catalog__header">
+            <h1 class="catalog__title">Наши номера</h1>
+            <div class="catalog__sort">
+                <select>
+                    <option class="arrow-up" value="square-up">
+                        По площади
+                    </option>
+                    <option class="arrow-down" value="square-down">По площади</option>
+                    <option class="arrow-up" value="price-up">По цене</option>
+                    <option class="arrow-down" value="price-down">По цене</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="catalog__inner">
+            <aside class="catalog__aside">
+                <form class="catalog__aside-form">
+                    <div class="aside-form__group">
+                        <p class="aside-form__title">Цена за сутки, <span class="rub">Р</span></p>
+                        <input class="aside-form__range" type="text" placeholder="от 100">
+                        <input class="aside-form__range" type="text" placeholder="до 600">
+                    </div>
+
+                    <div class="aside-form__group">
+                        <p class="aside-form__title">Площадь</p>
+                        <div class="aside-form__content-box">
+
+                            <div class="checkbox">
+                                <input class="content-checkbox" type="checkbox" id="size-1" name="size-1" value="0,63">
+                                <label class="aside-form__content-label checkbox--fake" for="size-1">
+                                    0,63 м2
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input class="content-checkbox" type="checkbox" id="size-2" name="size-2" value="0,90"
+                                    disabled>
+                                <label class="aside-form__content-label checkbox--fake" for="size-2">
+                                    0,90 м2
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input class="content-checkbox" type="checkbox" id="size-3" name="size-3" value="1,13">
+                                <label class="aside-form__content-label checkbox--fake" for="size-3">
+                                    1,13 м2
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input class="content-checkbox" type="checkbox" id="size-4" name="size-4" value="1,56">
+                                <label class="aside-form__content-label checkbox--fake" for="size-4">
+                                    1,56 м2
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input class="content-checkbox" type="checkbox" id="size-5" name="size-5" value="2,56">
+                                <label class="aside-form__content-label checkbox--fake" for="size-5">
+                                    2,56 м2
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input class="content-checkbox" type="checkbox" id="size-6" name="size-6" value="2,88">
+                                <label class="aside-form__content-label checkbox--fake" for="size-6">
+                                    2,88 м2
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="aside-form__group">
+                        <p class="aside-form__title">Оснащение номера</p>
+                        <div class="aside-form__content-box">
+
+                            <div class="checkbox">
+                                <input class="content-checkbox" type="checkbox" id="equip-1" name="equip-1"
+                                    value="Пустой номер">
+                                <label class="aside-form__content-label checkbox--fake" for="equip-1">
+                                    Пустой номер
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input class="content-checkbox" type="checkbox" id="equip-2" name="equip-2"
+                                    value="Лежак">
+                                <label class="aside-form__content-label checkbox--fake" for="equip-2">
+                                    Лежак
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input class="content-checkbox" type="checkbox" id="equip-3" name="equip-3"
+                                    value="Когтеточка">
+                                <label class="aside-form__content-label checkbox--fake" for="equip-3">
+                                    Когтеточка
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input class="content-checkbox" type="checkbox" id="equip-4" name="equip-4"
+                                    value="Игровой-комплекс">
+                                <label class="aside-form__content-label checkbox--fake" for="equip-4">
+                                    Игровой-комплекс
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input class="content-checkbox" type="checkbox" id="equip-5" name="equip-5"
+                                    value="Домик">
+                                <label class="aside-form__content-label checkbox--fake" for="equip-5">
+                                    Домик
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="aside-form__btn aside-form__btn--submit" type="submit">Применить</button>
+                    <button class="aside-form__btn aside-form__btn--reset" type="reset">Сбросить фильтр</button>
+                </form>
+            </aside>
+
+            <main class="catalog__content">
+                <div class="catalog__content-item">
+
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
