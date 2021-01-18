@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 280px;
 
-  padding: 0 30px;
+  padding-right: 15px;
 }
 
 .aside-form__group {
@@ -26,18 +26,18 @@
 
   border: 1px solid #e1e1e1;
   padding: 7px;
+
+  &::placeholder {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+  }
 }
 
 .aside-form__range + .aside-form__range {
   margin-left: 10px;
-}
-
-.aside-form__range::placeholder {
-  font-family: Lato, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: $black;
 }
 
 .aside-form__content-box {

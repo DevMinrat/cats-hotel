@@ -17,7 +17,7 @@
 .footer-contacts__inner {
   display: flex;
   flex: 0 1.5 auto;
-  justify-content: center;
+  justify-content: flex-end;
 
   width: 100%;
   padding: 70px 10px 35px 10px;
@@ -31,7 +31,7 @@
   justify-content: space-between;
 
   width: 100%;
-  max-width: 270px;
+  max-width: 370px;
 }
 
 .footer-contacts__title {

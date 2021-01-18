@@ -1,4 +1,23 @@
+.catalog {
+  margin-top: 70px;
+}
+
 .catalog__header {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 50px;
+}
+
+.catalog__title {
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  flex-shrink: 43;
+  color: $black;
+}
+
+.catalog__inner {
   display: flex;
   justify-content: space-between;
 }

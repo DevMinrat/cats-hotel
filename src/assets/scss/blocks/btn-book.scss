@@ -1,6 +1,9 @@
 .btn-book {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  max-width: 206px;
 
   font-family: Rubik, sans-serif;
   font-weight: 500;
@@ -13,7 +16,7 @@
   background-color: $secondary;
   border: none;
 
-  padding: 7px 7px 7px 30px;
+  padding: 7px 7px 7px 21px;
 
   transition: all 0.2s linear;
 }
@@ -84,4 +87,15 @@
   & .paw-icon {
     fill: $secondary;
   }
+}
+
+.btn-book--room {
+  position: absolute;
+  max-width: 230px;
+  left: 50%;
+  bottom: 20px;
+  z-index: 99;
+  transform: translateX(-50%);
+
+  padding-left: 30px;
 }
