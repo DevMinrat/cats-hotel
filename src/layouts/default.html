@@ -6,13 +6,25 @@
 </head>
 
 <body>
+    {{> sprite }}
 
     <div class="page">
 
-        {{> header }}
+        <!-- Header -->
+        <div class="container">
 
-        {{> body }}
+            {{> header }}
 
+        </div>
+
+        <!-- Main content -->
+        <main>
+
+            {{> body }}
+
+        </main>
+
+        <!-- Footer -->
         {{> footer }}
 
     </div>

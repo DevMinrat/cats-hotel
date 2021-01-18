@@ -2,3 +2,213 @@
 layout: default
 title: Главная страница
 ---
+
+<div class="intro">
+    <div class="intro__wrapper">
+        <div class="intro__inner">
+            <div class="intro__suptitle-city">
+                Санкт-Петербург
+            </div>
+            <div class="intro__suptitle-name">
+                Котейка
+            </div>
+            <h1 class="intro__title">
+                Уютная гостиница для котов и кошек
+            </h1>
+
+            <button class="btn-book btn-book--white">
+                Забронировать
+                <div class="btn-book__paw">
+                    <svg class="paw-icon">
+                        <use xlink:href="#paw-icon"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+
+<section class="benefits">
+    <div class="container">
+        <h2 class="section-title">Почему мы?</h2>
+        <div class="benefits__inner">
+            <div class="benefits__item">
+                <div class="benefits__item-img">
+                    <svg class="item-img__icon" width="31" height="53">
+                        <use xlink:href="#therm"></use>
+                    </svg>
+                </div>
+                <h3 class="benefits__item-title">Комфортная температура</h3>
+                <p class="benefits__item-text">Во всех номерах поддерживается комфортная температура в пределах
+                    23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.
+                </p>
+            </div>
+
+            <div class="benefits__item">
+                <div class="benefits__item-img">
+                    <svg class="item-img__icon" width="47" height="37">
+                        <use xlink:href="#camera"></use>
+                    </svg>
+                </div>
+                <h3 class="benefits__item-title">Видеонаблюдение</h3>
+                <p class="benefits__item-text">Мы предоставляем доступ в нашу систему. Вы сможете следить
+                    за своим питомцем со своего смартфона или компьютера.
+                </p>
+            </div>
+
+            <div class="benefits__item">
+                <div class="benefits__item-img">
+                    <svg class="item-img__icon" width="51" height="31">
+                        <use xlink:href="#taxi"></use>
+                    </svg>
+                </div>
+                <h3 class="benefits__item-title">Услуги Зоотакси</h3>
+                <p class="benefits__item-text">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.
+                </p>
+            </div>
+
+            <div class="benefits__item">
+                <div class="benefits__item-img">
+                    <svg class="item-img__icon" width="53" height="35" fill="none">
+                        <use xlink:href="#fish"></use>
+                    </svg>
+                </div>
+                <h3 class="benefits__item-title">Сбалансированное питание</h3>
+                <p class="benefits__item-text">Вы можете привезти свой корм или доверить рацион своего питомца нашим
+                    профессионалам.
+                </p>
+            </div>
+
+            <div class="benefits__item">
+                <div class="benefits__item-img">
+                    <svg class="item-img__icon" width="47" height="39">
+                        <use xlink:href="#cat"></use>
+                    </svg>
+                </div>
+                <h3 class="benefits__item-title">Ежедневные прогулки</h3>
+                <p class="benefits__item-text">По вашему желанию мы выгуливаем вашего питомца два раза в день
+                    на специализированной закрытой территории.</p>
+            </div>
+
+            <div class="benefits__item">
+                <div class="benefits__item-img">
+                    <svg class="item-img__icon" width="41" height="43">
+                        <use xlink:href="#vet"></use>
+                    </svg>
+                </div>
+                <h3 class="benefits__item-title">Лучшие ветеринары</h3>
+                <p class="benefits__item-text">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую
+                    помощь в случае необходимости.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> rooms-slider }}
+
+<section class="reviews">
+    <h2 class="section-title">Отзывы</h2>
+
+    <div class="reviews__wrapper">
+        <div class="reviews__slider">
+            <div class="reviews__item">
+                <div class="reviews-item__wrapper">
+                    <svg class="reviews-item__icon">
+                        <use xlink:href="#quote-icon"></use>
+                    </svg>
+                    <p class="reviews-item__text">Первый раз пришлось оставить нашего котика
+                        в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
+                        рассказывала, как он себя чувствует.
+                        И мы и котик остались очень довольны!
+                    </p>
+                    <div class="reviews-item__info">
+                        <p>Валерия Гришаева</p>
+                        <p>15 ноября, 2020</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews-item__wrapper">
+                    <svg class="reviews-item__icon">
+                        <use xlink:href="#quote-icon"></use>
+                    </svg>
+                    <p class="reviews-item__text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют
+                        здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице
+                        очень чисто. Всем рекомендую! Будем обращаться еще.
+                    </p>
+                    <div class="reviews-item__info">
+                        <p>Екатерина Минаева</p>
+                        <p>10 октября, 2019</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews-item__wrapper">
+                    <svg class="reviews-item__icon">
+                        <use xlink:href="#quote-icon"></use>
+                    </svg>
+                    <p class="reviews-item__text">Первый раз пришлось оставить нашего котика
+                        в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
+                        рассказывала, как он себя чувствует.
+                        И мы и котик остались очень довольны!
+                    </p>
+                    <div class="reviews-item__info">
+                        <p>Валерия Гришаева</p>
+                        <p>15 ноября, 2020</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews-item__wrapper">
+                    <svg class="reviews-item__icon">
+                        <use xlink:href="#quote-icon"></use>
+                    </svg>
+                    <p class="reviews-item__text">Первый раз пришлось оставить нашего котика
+                        в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
+                        рассказывала, как он себя чувствует.
+                        И мы и котик остались очень довольны!
+                    </p>
+                    <div class="reviews-item__info">
+                        <p>Валерия Гришаева</p>
+                        <p>15 ноября, 2020</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews-item__wrapper">
+                    <svg class="reviews-item__icon">
+                        <use xlink:href="#quote-icon"></use>
+                    </svg>
+                    <p class="reviews-item__text">Первый раз пришлось оставить нашего котика
+                        в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
+                        рассказывала, как он себя чувствует.
+                        И мы и котик остались очень довольны!
+                    </p>
+                    <div class="reviews-item__info">
+                        <p>Валерия Гришаева</p>
+                        <p>15 ноября, 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews-arrow__wrapper">
+        <button class="slick__arrow slick__arrow--prev" id="reviews-arrow-prev" type="button">
+            <svg class="slick__arrow-icon">
+                <use xlink:href="#arrow"></use>
+            </svg>
+        </button>
+
+        <button class="slick__arrow slick__arrow--next" id="reviews-arrow-next" type="button">
+            <svg class="slick__arrow-icon slick__arrow-icon--next">
+                <use xlink:href="#arrow"></use>
+            </svg>
+        </button>
+    </div>
+</section>

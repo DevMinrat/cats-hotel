@@ -4,7 +4,6 @@
 @import "vendor/reset";
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -17,24 +16,45 @@ html {
 body {
   background-color: $white;
 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.4rem;
-  line-height: 1.5;
-  color: $white;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: $black;
 }
 
 a {
   text-decoration: none;
+  color: $black;
 
   &:hover {
     text-decoration: underline;
   }
 }
 
+button:focus {
+  outline: 1px dotted $secondary;
+}
+
 /* Blocks */
 
-// @import "blocks/name";
-
 @import "blocks/page";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/intro";
+@import "blocks/btn-book";
+@import "blocks/section-title";
+@import "blocks/benefits";
+@import "blocks/rooms";
+@import "blocks/rub";
+@import "blocks/reviews";
+@import "blocks/catalog";
+@import "blocks/catalog-aside";
+@import "blocks/catalog-content";
+@import "blocks/banner";
+@import "blocks/footer";
+
+/* Vendors */
+
+@import "vendor/slick";
+@import "vendor/formstyler";
