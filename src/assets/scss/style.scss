@@ -35,6 +35,12 @@ button:focus {
   outline: 1px dotted $secondary;
 }
 
+/* Vendors */
+
+@import "vendor/slick";
+@import "vendor/formstyler";
+@import "vendor/magn-popup";
+
 /* Blocks */
 
 @import "blocks/page";
@@ -52,9 +58,6 @@ button:focus {
 @import "blocks/catalog-aside";
 @import "blocks/catalog-content";
 @import "blocks/banner";
+@import "blocks/room-card";
 @import "blocks/footer";
-
-/* Vendors */
-
-@import "vendor/slick";
-@import "vendor/formstyler";
+@import "blocks/popup";

@@ -1,4 +1,5 @@
-.btn-book {
+.btn-book,
+.popup-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,7 +67,8 @@
   }
 }
 
-.btn-book:hover {
+.btn-book:hover,
+.popup-btn:hover {
   background-color: $white;
   color: $black;
 
@@ -98,4 +100,8 @@
   transform: translateX(-50%);
 
   padding-left: 30px;
+}
+
+.popup-btn {
+  margin: 30px auto 0;
 }

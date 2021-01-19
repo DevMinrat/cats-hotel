@@ -478,8 +478,8 @@ button:focus {
 
 .container {
     width: 100%;
-    max-width: 1190px;
-    padding: 0 10px;
+    max-width: 1200px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -1132,6 +1132,10 @@ button:focus {
     border-radius: 6px;
 }
 
+.catalog__content-item:hover {
+    box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.78);
+}
+
 .content-item__inner {
     padding: 25px 10px 70px 20px;
     border: 1px solid #e1e1e1;
@@ -1234,15 +1238,35 @@ button:focus {
     display: block;
 }
 
+.room-card {
+    padding-top: 25px;
+    background: url(/assets/images/room-card-bg.svg) no-repeat top -50px right;
+}
+
+.room-card__inner {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.room-card__slider {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.slider-nav__img {
+    width: 100%;
+    max-width: 70px;
+}
+
 .footer {
     margin-top: 140px;
 }
 
 .footer-container {
     width: 100%;
-    max-width: 990px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .footer-contacts__wrapper {
@@ -1258,7 +1282,7 @@ button:focus {
     -ms-flex-pack: end;
     justify-content: flex-end;
     width: 100%;
-    padding: 70px 10px 35px 10px;
+    padding: 70px 10px 35px 15px;
     background-color: #fac663;
 }
 
@@ -1514,6 +1538,11 @@ button:focus {
 
 .reviews .slick__arrow {
     bottom: -70px;
+}
+
+.slider-nav__img {
+    width: 100%;
+    max-width: 70px;
 }
 
 .jq-selectbox,

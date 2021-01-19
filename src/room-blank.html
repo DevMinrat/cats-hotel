@@ -1,4 +1,89 @@
 ---
-layouts: default
+layout: default
 title: Супер-люкс
 ---
+
+<section class="room-card">
+    <div class="container">
+        <div class="room-card__inner">
+            <div class="room-card__slider">
+                <div class="room-card__slider-nav">
+                    <div class="item">
+                        <img class="slider-nav__img" src="/assets/images/rooms/slider-comfort.jpg" alt=""
+                            draggable="false">
+                    </div>
+                    <div class="item">
+                        <img class="slider-nav__img" src="/assets/images/rooms/slider-economplus.jpg" alt=""
+                            draggable="false">
+                    </div>
+                    <div class="item">
+                        <img class="slider-nav__img" src="/assets/images/rooms/slider-suite.jpg" alt=""
+                            draggable="false">
+                    </div>
+
+                </div>
+                <div class="room-card__slider-for">
+                    <div class="item">
+                        <img class="slider-for__img" src="/assets/images/rooms/slider-comfort.jpg" alt=""
+                            draggable="false">
+                    </div>
+                    <div class="item">
+                        <img class="slider-for__img" src="/assets/images/rooms/slider-economplus.jpg" alt=""
+                            draggable="false">
+                    </div>
+                    <div class="item">
+                        <img class="slider-for__img" src="/assets/images/rooms/slider-suite.jpg" alt=""
+                            draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <div class="room-card__content">
+                <h1 class="room-card__content-title">Супер-Люкс</h1>
+                <ul class="room-card__content-list">
+                    <li class="room-card__list-item">Размеры (ШхГхВ) - 180х160х180 см</li>
+                    <li class="room-card__list-item">Площадь - 2,88 м2</li>
+                    <ul class="room-card__list-equip">Оснащение номера:
+                        <li class="list-equip__item">
+                            <svg class="bed-icon">
+                                <use xlink:href="#bed-icon"></use>
+                            </svg>
+                            Лежак
+                        </li>
+                        <li class="list-equip__item">
+                            <svg class="house-icon">
+                                <use xlink:href="#house-icon"></use>
+                            </svg>
+                            Домик
+                        </li>
+                        <li class="list-equip__item">
+                            <svg class="clew-icon">
+                                <use xlink:href="#clew-icon"></use>
+                            </svg>
+                            Игровой комплекс - 3 яруса
+                        </li>
+                        <li class="list-equip__item">
+                            <svg class="claw-icon">
+                                <use xlink:href="#claw-icon"></use>
+                            </svg>
+                            Когтеточка
+                        </li>
+                    </ul>
+                    <li class="room-card__list-item room-card__price">Цена за сутки:
+                        <span class="room-card__item-price">600<span class="rub">P</span></span>
+                    </li>
+                </ul>
+                <button class="btn-book" type="button" href="#main-popup">
+                    Забронировать
+                    <span class="btn-book__paw">
+                        <svg class="paw-icon">
+                            <use xlink:href="#paw-icon"></use>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> banner }}

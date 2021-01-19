@@ -18,7 +18,6 @@
     "gulp-sass": "^4.1.0",
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.2",
-    "jquery-form-styler": "^2.0.2",
     "panini": "^1.7.1",
     "rigger": "^1.0.1"
   },
@@ -28,6 +27,8 @@
     "IE 10"
   ],
   "dependencies": {
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "jquery-form-styler": "^2.0.2",
+    "magnific-popup": "^1.1.0"
   }
 }

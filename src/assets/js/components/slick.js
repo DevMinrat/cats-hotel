@@ -1,3 +1,5 @@
+// rooms slider
+
 var rooms = $(".rooms__slider");
 
 rooms.slick({
@@ -16,6 +18,10 @@ $("#rooms-arrow-next").on("click", function (event) {
 
   rooms.slick("slickNext");
 });
+
+// end rooms slider
+
+// reviews slider
 
 var reviews = $(".reviews__slider");
 
@@ -39,3 +45,25 @@ $("#reviews-arrow-next").on("click", function (event) {
 
   reviews.slick("slickNext");
 });
+
+// end reviews slider
+
+// room-card slider
+
+$(".room-card__slider-for").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".room-card__slider-nav",
+});
+$(".room-card__slider-nav").slick({
+  slidesToShow: 3,
+  asNavFor: ".room-card__slider-for",
+  dots: false,
+  arrows: false,
+  centerMode: true,
+  focusOnSelect: true,
+});
+
+// end room-card slider
