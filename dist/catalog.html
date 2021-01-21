@@ -200,39 +200,69 @@
     <div class="page">
 
         <!-- Header -->
-        <div class="container">
 
-            <header class="header">
+        <header class="header" id="header">
+            <div class="container">
                 <div class="menu__inner">
                     <div class="menu__logo">
-                        <a href="#" class="logo__link">
-                            <img class="menu__logo-img" src="/assets/images/logo.png" alt="Логотип Котейка">
+                        <a href="#intro" class="logo__link" data-scroll="#intro">
+                            <picture>
+                                <source media="(max-width: 769px)" srcset="/assets/images/logo-mobile.png">
+                                <img class="menu__logo-img" src="/assets/images/logo.png" alt="Логотип Котейка">
+                            </picture>
                         </a>
                     </div>
                 
-                    <nav class="menu__nav">
+                    <nav class="menu__nav" id="nav">
                         <ul class="nav__list">
                             <li class="nav__list-item">
-                                <a class="nav__link" href="#">Почему мы?</a>
+                                <a class="nav__link" href="#why_we" data-scroll="#why_we">Почему мы?</a>
                             </li>
                             <li class="nav__list-item">
                                 <a class="nav__link" href="/catalog.html">Номера</a>
                             </li>
                             <li class="nav__list-item">
-                                <a class="nav__link" href="#">Отзывы</a>
+                                <a class="nav__link" href="#reviews" data-scroll="#reviews">Отзывы</a>
                             </li>
                             <li class="nav__list-item">
-                                <a class="nav__link" href="#">Как нас найти</a>
+                                <a class="nav__link" href="#contacts" data-scroll="#contacts">Как нас найти</a>
                             </li>
+                
+                            <li class="list-item__tel-burger">
+                                <a class="nav__link-tel--burger" href="tel:88003335599">8 (800) 333-55-99</a>
+                            </li>
+                            <div class="burger-mobile__social-icons">
+                                <div class="social-icons__item">
+                                    <a href="#" class="social-icons__item-link">
+                                        <svg class="social-icons__item-icon">
+                                            <use xlink:href="#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="social-icons__item">
+                                    <a href="#" class="social-icons__item-link">
+                                        <svg class="social-icons__item-icon">
+                                            <use xlink:href="#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="social-icons__item">
+                                    <a href="#" class="social-icons__item-link">
+                                        <svg class="social-icons__item-icon">
+                                            <use xlink:href="#vk"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                
                         </ul>
                     </nav>
                 
-                    <div class="burger-menu">
+                    <div class="burger-menu" id="burger_menu">
                         <div class="burger"></div>
                     </div>
-                </div></header>
-        </div>
-
+                </div>    </div>
+        </header>
         <!-- Main content -->
 
         
@@ -633,7 +663,7 @@
             </div>
         </div>
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer" id="contacts">
             <div class="footer-contacts__wrapper">
                 <section class="footer-contacts__inner">
                     <div class="footer-contacts__content">
@@ -694,36 +724,6 @@
         
                 <div class=" footer__map" id="map"></div>
             </div>
-        
-            <div class="footer-container">
-                <div class="menu__inner">
-                    <div class="menu__logo">
-                        <a href="#" class="logo__link">
-                            <img class="menu__logo-img" src="/assets/images/logo.png" alt="Логотип Котейка">
-                        </a>
-                    </div>
-                
-                    <nav class="menu__nav">
-                        <ul class="nav__list">
-                            <li class="nav__list-item">
-                                <a class="nav__link" href="#">Почему мы?</a>
-                            </li>
-                            <li class="nav__list-item">
-                                <a class="nav__link" href="/catalog.html">Номера</a>
-                            </li>
-                            <li class="nav__list-item">
-                                <a class="nav__link" href="#">Отзывы</a>
-                            </li>
-                            <li class="nav__list-item">
-                                <a class="nav__link" href="#">Как нас найти</a>
-                            </li>
-                        </ul>
-                    </nav>
-                
-                    <div class="burger-menu">
-                        <div class="burger"></div>
-                    </div>
-                </div>    </div>
         
             <div class="footer__copy">
                 <div class="footer-container">

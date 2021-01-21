@@ -6077,8 +6077,35 @@ $(function () {
       },
     },
   });
+  $(".burger-menu").click(function () {
+    $(this).toggleClass("menu-on");
+    $("#nav").toggleClass("active");
+    $(".header").toggleClass("active");
+  });
 
-  console.log("file 3");
+  $("[data-scroll]").on("click", function (event) {
+    event.preventDefault();
+
+    var $this = $(this),
+      blockId = $this.data("scroll"),
+      blockOffset = $(blockId).offset().top;
+
+    $("#nav a").removeClass("active");
+    $this.addClass("active");
+
+    $("html, body").animate(
+      {
+        scrollTop: blockOffset,
+      },
+      500
+    );
+  });
+
+  $(window).scroll(function () {
+    $("#burger_menu").removeClass("menu-on");
+    $(".menu__nav").removeClass("active");
+    $("#header").removeClass("active");
+  });
 });
 
 ymaps.ready(function () {

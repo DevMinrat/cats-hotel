@@ -2,29 +2,49 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  min-height: 76px;
-
-  background-color: $white;
+  position: relative;
 }
 
 .menu__logo {
   padding: 12px 0;
 }
 
+.menu__nav {
+  @include breakpoint($md-bp) {
+    display: none;
+  }
+}
+
 .nav__list-item {
   display: inline-block;
 
   margin-left: 30px;
+
+  @include breakpoint($md-bp) {
+    margin-left: 0;
+  }
 }
 
-.nav__link {
+.nav__link,
+.nav__link-tel--burger {
   color: $black;
   font-family: Rubik, sans-serif;
   font-weight: 400;
 }
 
-.burger-menu {
-  position: relative;
-  
+.nav__link.active {
+  text-decoration: underline;
+}
+
+.list-item__tel-burger {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.list-item__tel-burger {
+  display: none;
+}
+
+.burger-mobile__social-icons {
+  display: none;
 }
