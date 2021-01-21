@@ -1,4 +1,4 @@
-$(".btn-book").magnificPopup({
+$(".btn-book, .banner__link").magnificPopup({
   type: "inline",
   preloader: false,
   focus: "#name",

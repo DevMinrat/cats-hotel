@@ -1,25 +1,55 @@
 .benefits {
   padding-top: $section-padding;
   background: url(../../assets/images/benefits/paw-bg.svg) no-repeat top -23px right;
+
+  @include breakpoint($xl-bp) {
+    padding-top: $section-padding-lg-bp;
+  }
+
+  @include breakpoint($lg-bp) {
+    background-position: top -10px right -25px;
+    background-size: 37%;
+  }
 }
 
 .benefits__inner {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include breakpoint($xl-bp) {
+    justify-content: center;
+  }
 }
 
 .benefits__item {
+  width: 100%;
   max-width: 370px;
 
   padding: 30px;
   margin-bottom: 20px;
+  margin-right: 15px;
 
   box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
   border-radius: 8px;
   background-color: #fff;
-  & + .benefits__item {
-    // margin-left: 30px;
+
+  &:nth-child(3n + 3) {
+    margin-right: 0px;
+  }
+
+  @include breakpoint($xl-bp) {
+    &:nth-child(3n + 3) {
+      margin-right: 15px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
+
+  @include breakpoint($lg-bp) {
+    max-width: 324px;
   }
 }
 
@@ -34,6 +64,11 @@
   fill: $white;
 
   margin-bottom: 35px;
+
+  @include breakpoint($lg-bp) {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 .item-img__icon {
@@ -44,16 +79,86 @@
   transform: translate(-50%, -50%);
 }
 
+.item-img__icon--therm {
+  width: 31px;
+  height: 53px;
+
+  @include breakpoint($lg-bp) {
+    width: 25px;
+    height: 45px;
+  }
+}
+
+.item-img__icon--camera {
+  width: 47px;
+  height: 37px;
+
+  @include breakpoint($lg-bp) {
+    width: 38px;
+    height: 30px;
+  }
+}
+
+.item-img__icon--taxi {
+  width: 51px;
+  height: 31px;
+
+  @include breakpoint($lg-bp) {
+    width: 42px;
+    height: 25px;
+  }
+}
+
+.item-img__icon--fish {
+  width: 53px;
+  height: 35px;
+
+  @include breakpoint($lg-bp) {
+    width: 43px;
+    height: 28px;
+  }
+}
+
+.item-img__icon--cat {
+  width: 47px;
+  height: 39px;
+
+  @include breakpoint($lg-bp) {
+    width: 38px;
+    height: 32px;
+  }
+}
+
+.item-img__icon--vet {
+  width: 41px;
+  height: 43px;
+
+  @include breakpoint($lg-bp) {
+    width: 33px;
+    height: 35px;
+  }
+}
+
 .benefits__item-title {
   font-family: Rubik;
   font-weight: 500;
   font-size: 22px;
 
   margin-bottom: 20px;
+
+  @include breakpoint($lg-bp) {
+    font-size: 20px;
+  }
 }
 
 .benefits__item-text {
   font-family: Lato, sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.4;
+
+  @include breakpoint($lg-bp) {
+    font-size: 15px;
+    line-height: 1.4;
+  }
 }

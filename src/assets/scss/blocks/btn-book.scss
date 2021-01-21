@@ -65,6 +65,10 @@
     fill: $white;
     transition: inherit;
   }
+
+  @include breakpoint($md-bp) {
+    margin: 0 auto;
+  }
 }
 
 .btn-book:hover,

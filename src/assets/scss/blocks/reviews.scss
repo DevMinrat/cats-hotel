@@ -9,6 +9,11 @@
     right;
 
   height: 520px;
+
+  @include breakpoint($lg-bp) {
+    padding-top: $section-padding-lg-bp;
+    background-size: 35%;
+  }
 }
 
 .reviews__wrapper {
@@ -17,7 +22,7 @@
   max-width: 1386px;
 
   margin: 0 auto;
-  padding-left: 10px;
+  padding-left: 45px;
 }
 
 .reviews-arrow__wrapper {
@@ -39,6 +44,11 @@
   background-color: #fff;
   box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
   border-radius: 8px;
+
+  @include breakpoint($md-bp) {
+    max-width: 442px;
+    padding-right: 30px;
+  }
 }
 
 .reviews-item__wrapper {
@@ -66,8 +76,14 @@
   font-family: Rubik, sans-serif;
   color: $black;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
 
   margin-bottom: 25px;
+
+  @include breakpoint($lg-bp) {
+    font-size: 15px;
+  }
 }
 
 .reviews-item__info {

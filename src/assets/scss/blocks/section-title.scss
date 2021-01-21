@@ -6,7 +6,11 @@
 
   text-align: center;
 
-  margin-bottom: 70px;
+  margin-bottom: $title-padding;
+
+  @include breakpoint($lg-bp) {
+    margin-bottom: $title-padding-lg-bp;
+  }
 }
 
 .reviews .section-title {

@@ -6009,10 +6009,21 @@ $(function () {
   reviews.slick({
     dots: true,
     arrows: false,
-    slidesToShow: 3,
-    slidesToScroll: 2,
-  
+    slidesToShow: 2,
+    slidesToScroll: 1,
     variableWidth: true,
+  
+    responsive: [
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          variableWidth: false,
+        },
+      },
+    ],
   });
   
   $("#reviews-arrow-prev").on("click", function (event) {
@@ -6049,7 +6060,7 @@ $(function () {
   
   // end room-card slider
   $("select").styler();
-  $(".btn-book").magnificPopup({
+  $(".btn-book, .banner__link").magnificPopup({
     type: "inline",
     preloader: false,
     focus: "#name",
