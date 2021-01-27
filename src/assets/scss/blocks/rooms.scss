@@ -9,6 +9,11 @@
     background-size: 45%;
     background-position: top 43px left;
   }
+
+  @include breakpoint($sm-bp) {
+    padding-bottom: 50px;
+    margin-top: $section-padding-sm-bp;
+  }
 }
 
 .rooms__wrapper {
@@ -20,6 +25,15 @@
   padding-left: 45px;
 
   margin: 0 auto;
+
+  @include breakpoint($md-bp) {
+    margin: 0 auto;
+    padding-left: 15px;
+  }
+
+  @include breakpoint($sm-bp) {
+    padding-right: 15px;
+  }
 }
 
 .rooms__item {
@@ -29,13 +43,29 @@
 .rooms__item-img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 404px;
   max-width: 600px;
+
+  object-fit: cover;
 
   border-radius: 10px;
 
   @include breakpoint($lg-bp) {
     max-width: 500px;
+  }
+
+  @include breakpoint($md-bp) {
+    border-radius: 10px 10px 0 0;
+
+    max-height: 325px;
+    max-width: 440px;
+
+    margin: 0 auto;
+  }
+
+  @include breakpoint($sm-bp) {
+    max-height: 190px;
+    max-width: 290px;
   }
 }
 
@@ -66,8 +96,25 @@
   }
 
   @include breakpoint($md-bp) {
-    max-width: 345px;
+    width: 100%;
+    max-width: 440px;
     padding: 35px;
+    margin: 0 auto;
+
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+
+    border-radius: 0 0 8px 8px;
+
+    & .btn-book {
+      margin: 0 auto;
+    }
+  }
+
+  @include breakpoint($sm-bp) {
+    max-width: 290px;
   }
 }
 

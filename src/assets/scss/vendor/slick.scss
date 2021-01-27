@@ -132,6 +132,10 @@
   @include breakpoint($md-bp) {
     bottom: -50px;
   }
+
+  @include breakpoint($sm-bp) {
+    bottom: -30px;
+  }
 }
 
 .slick__arrow {

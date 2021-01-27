@@ -11,6 +11,10 @@
   @include breakpoint($lg-bp) {
     margin-bottom: $title-padding-lg-bp;
   }
+
+  @include breakpoint($sm-bp) {
+    margin-bottom: $title-padding-sm-bp;
+  }
 }
 
 .reviews .section-title {
