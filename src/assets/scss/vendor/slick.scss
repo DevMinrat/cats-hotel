@@ -195,6 +195,10 @@
   @include breakpoint($md-bp) {
     bottom: -30px;
   }
+
+  @include breakpoint($sm-bp) {
+    bottom: 0;
+  }
 }
 
 .reviews .slick__arrow {

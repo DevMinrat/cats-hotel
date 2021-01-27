@@ -10,6 +10,10 @@
     background-position: top -10px right -25px;
     background-size: 37%;
   }
+
+  @include breakpoint($sm-bp) {
+    padding-top: $section-padding-sm-bp;
+  }
 }
 
 .benefits__inner {
@@ -34,10 +38,6 @@
   border-radius: 8px;
   background-color: #fff;
 
-  &:nth-child(3n + 3) {
-    margin-right: 0px;
-  }
-
   @include breakpoint($xl-bp) {
     &:nth-child(3n + 3) {
       margin-right: 15px;
@@ -50,6 +50,19 @@
 
   @include breakpoint($lg-bp) {
     max-width: 324px;
+  }
+
+  @include breakpoint($sm-bp) {
+    margin-right: 0;
+    padding: 25px;
+  }
+
+  &:nth-child(3n + 3) {
+    margin-right: 0px;
+
+    @include breakpoint($sm-bp) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -148,6 +161,10 @@
 
   @include breakpoint($lg-bp) {
     font-size: 20px;
+  }
+
+  @include breakpoint($sm-bp) {
+    font-size: 18px;
   }
 }
 

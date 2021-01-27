@@ -15,6 +15,14 @@
 
     padding-top: 62px;
   }
+
+  @include breakpoint($sm-bp) {
+    background: url(../../assets/images/intro-bg-mobile.jpg) no-repeat center;
+    background-size: cover;
+    max-height: 568px;
+
+    padding-top: 80px;
+  }
 }
 
 .intro__wrapper {
@@ -34,6 +42,10 @@
     text-align: center;
     height: 55%;
   }
+
+  @include breakpoint($sm-bp) {
+    padding: 0 15px;
+  }
 }
 
 .intro__inner {
@@ -48,6 +60,11 @@
   font-weight: 400;
 
   margin-bottom: 0;
+
+  @include breakpoint($sm-bp) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .intro__suptitle-name {
@@ -57,6 +74,11 @@
   font-weight: 700;
 
   margin-bottom: 5px;
+
+  @include breakpoint($sm-bp) {
+    font-size: 44px;
+    line-height: 52px;
+  }
 }
 
 .intro__title {
@@ -65,4 +87,9 @@
   line-height: 24px;
 
   margin-bottom: 35px;
+
+  @include breakpoint($sm-bp) {
+    font-size: 15px;
+    line-height: 19px;
+  }
 }

@@ -14,9 +14,14 @@
 
   @include breakpoint($sm-bp) {
     margin-bottom: $title-padding-sm-bp;
+    font-size: 28px;
   }
 }
 
 .reviews .section-title {
   margin-bottom: 50px;
+
+  @include breakpoint($sm-bp) {
+    margin-bottom: $title-padding-sm-bp;
+  }
 }
