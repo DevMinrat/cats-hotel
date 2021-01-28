@@ -3194,7 +3194,7 @@
 						return $(this).commonParents().first();
 					};
 
-					// клик на псевдорадиокнопке
+					// клик на псевдорадиок��опке
 					radio.click(function(e) {
 						e.preventDefault();
 						el.triggerHandler('click');
@@ -6065,8 +6065,6 @@ $(function () {
     preloader: false,
     focus: "#name",
   
-    // When elemened is focused, some mobile browsers in some cases zoom in
-    // It looks not nice, so we disable it:
     callbacks: {
       beforeOpen: function () {
         if ($(window).width() < 700) {
@@ -6077,11 +6075,26 @@ $(function () {
       },
     },
   });
+  
+  $(".filters-btn").magnificPopup({
+    type: "inline",
+    preloader: false,
+  
+    callbacks: {
+      beforeOpen: function () {
+        if ($(window).width() < 700) {
+          this.st.focus = false;
+        }
+      },
+    },
+  });
   $(".burger-menu").click(function () {
     $(this).toggleClass("menu-on");
     $("#nav").toggleClass("active");
     $(".header").toggleClass("active");
   });
+
+  // Menu
 
   $("[data-scroll]").on("click", function (event) {
     event.preventDefault();
@@ -6106,6 +6119,20 @@ $(function () {
     $(".menu__nav").removeClass("active");
     $("#header").removeClass("active");
   });
+
+  // Catalog
+
+  let $window = $(window),
+    $aside = $("#catalog-aside");
+
+  function resize() {
+    $aside.removeClass("mfp-hide filter-popup");
+
+    if ($window.width() < 1082) {
+      return $aside.addClass("mfp-hide filter-popup");
+    }
+  }
+  $window.resize(resize).trigger("resize");
 });
 
 ymaps.ready(function () {

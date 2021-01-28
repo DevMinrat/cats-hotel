@@ -1,7 +1,11 @@
 <div class="banner">
     <div class="container">
         <a href="#main-popup" class="banner__link">
-            <img class="banner__img" src="/assets/images/banner-sevenfree.jpg" alt="">
+            <picture>
+                <source media="(max-width: 550px)" srcset="/assets/images/banner-sevenfree-sm.jpg">
+                <source media="(max-width: 891px)" srcset="/assets/images/banner-sevenfree-md.jpg">
+                <img class="banner__img" src="/assets/images/banner-sevenfree.jpg" alt="">
+            </picture>
         </a>
     </div>
 </div>

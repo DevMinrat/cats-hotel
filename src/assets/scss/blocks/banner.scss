@@ -1,8 +1,26 @@
 .banner {
-  margin-top: 140px;
+  margin-top: 110px;
+
+  @include breakpoint($md-bp) {
+    margin-top: 90px;
+  }
+
+  @include breakpoint($sm-bp) {
+    margin-top: 40px;
+  }
 }
 
 .banner__img {
   width: 100%;
+  max-width: 1170px;
   display: block;
+  margin: 0 auto;
+
+  @include breakpoint(891px) {
+    max-width: 678px;
+  }
+
+  @include breakpoint(550px) {
+    max-width: 290px;
+  }
 }

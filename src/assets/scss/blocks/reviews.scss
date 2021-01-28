@@ -8,14 +8,12 @@
   background: url(../../assets/images/reviews/reviews-bg.svg) no-repeat top
     right;
 
-  height: 520px;
-
   @include breakpoint($lg-bp) {
     padding-top: $section-padding-lg-bp;
     background-size: 35%;
   }
 
-  @include breakpoint($sm-bp) {
+  @include breakpoint($md-bp) {
     padding-top: $section-padding-sm-bp;
   }
 }

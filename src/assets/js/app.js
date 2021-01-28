@@ -8,6 +8,8 @@ $(function () {
   //= components/magn-popup.js
   //= components/burger-menu.js
 
+  // Menu
+
   $("[data-scroll]").on("click", function (event) {
     event.preventDefault();
 
@@ -31,6 +33,20 @@ $(function () {
     $(".menu__nav").removeClass("active");
     $("#header").removeClass("active");
   });
+
+  // Catalog
+
+  let $window = $(window),
+    $aside = $("#catalog-aside");
+
+  function resize() {
+    $aside.removeClass("mfp-hide filter-popup");
+
+    if ($window.width() < 1082) {
+      return $aside.addClass("mfp-hide filter-popup");
+    }
+  }
+  $window.resize(resize).trigger("resize");
 });
 
 //= components/map.js

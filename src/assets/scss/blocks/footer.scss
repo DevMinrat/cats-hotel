@@ -1,12 +1,16 @@
 .footer {
-  margin-top: $section-padding;
+  margin-top: 180px;
 
   @include breakpoint($lg-bp) {
-    margin-top: $section-padding-lg-bp;
+    margin-top: 160px;
+  }
+
+  @include breakpoint($md-bp) {
+    margin-top: 110px;
   }
 
   @include breakpoint($sm-bp) {
-    margin-top: 35px;
+    margin-top: 75px;
   }
 }
 

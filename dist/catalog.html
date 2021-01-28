@@ -271,6 +271,7 @@
                 <div class="catalog__header">
                     <h1 class="catalog__title">Наши номера</h1>
                     <div class="catalog__sort">
+                        <button class="filters-btn" href="#catalog-aside" id="filters_btn" type="button">Фильтры</button>
                         <select>
                             <option class="arrow-up" value="square-up">
                                 По площади
@@ -283,7 +284,7 @@
                 </div>
         
                 <div class="catalog__inner">
-                    <aside class="catalog__aside">
+                    <aside class="catalog__aside" id="catalog-aside">
                         <form class="catalog__aside-form">
                             <div class="aside-form__group">
                                 <p class="aside-form__title">Цена за сутки, <span class="rub">Р</span></p>
@@ -499,7 +500,7 @@
                                     </div>
                                 </article>
                             </a>
-                            <button class="btn-book btn-book--room">
+                            <button class="btn-book btn-book--room" href="#main-popup" type="button">
                                 Забронировать
                                 <span class="btn-book__paw">
                                     <svg class="paw-icon">
@@ -658,7 +659,11 @@
         <div class="banner">
             <div class="container">
                 <a href="#main-popup" class="banner__link">
-                    <img class="banner__img" src="/assets/images/banner-sevenfree.jpg" alt="">
+                    <picture>
+                        <source media="(max-width: 550px)" srcset="/assets/images/banner-sevenfree-sm.jpg">
+                        <source media="(max-width: 891px)" srcset="/assets/images/banner-sevenfree-md.jpg">
+                        <img class="banner__img" src="/assets/images/banner-sevenfree.jpg" alt="">
+                    </picture>
                 </a>
             </div>
         </div>

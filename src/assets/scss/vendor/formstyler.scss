@@ -83,6 +83,14 @@
   color: $black;
   font-size: 14px;
   line-height: 35px;
+
+  transition: all 0.1s linear;
+
+  @include breakpoint($sm-bp) {
+    width: 154px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .jq-selectbox.opened .jq-selectbox__select {
@@ -91,6 +99,7 @@
 
 .jq-selectbox__select:hover {
   background: lighten($primary, 10%);
+  border-color: lighten($primary, 10%);
 }
 .jq-selectbox__select:active {
   background: #f5f5f5;
@@ -201,6 +210,8 @@
 .jq-selectbox li.option {
   padding-left: 25px;
 }
+
+// Catalog style
 
 .arrow-up,
 .arrow-up .jq-selectbox__select-text {
