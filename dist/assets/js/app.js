@@ -3194,7 +3194,7 @@
 						return $(this).commonParents().first();
 					};
 
-					// клик на псевдорадиок��опке
+					// клик на псевдорадиокнопке
 					radio.click(function(e) {
 						e.preventDefault();
 						el.triggerHandler('click');
@@ -6079,6 +6079,7 @@ $(function () {
   $(".filters-btn").magnificPopup({
     type: "inline",
     preloader: false,
+    fixedContentPos: true,
   
     callbacks: {
       beforeOpen: function () {

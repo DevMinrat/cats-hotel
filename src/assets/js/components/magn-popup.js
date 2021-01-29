@@ -17,6 +17,7 @@ $(".btn-book, .banner__link").magnificPopup({
 $(".filters-btn").magnificPopup({
   type: "inline",
   preloader: false,
+  fixedContentPos: true,
 
   callbacks: {
     beforeOpen: function () {

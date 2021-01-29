@@ -1,16 +1,34 @@
 .room-card {
-  padding-top: 25px;
-  margin-top: 45px;
+  padding-top: 146px;
 
   background: url(/assets/images/room-card-bg.svg) no-repeat top -50px right;
+
+  @include breakpoint(800px) {
+    padding-top: 136px;
+  }
+
+  @include breakpoint(420px) {
+    padding-top: 102px;
+  }
 }
 
 .room-card__inner {
   display: flex;
+
+  @include breakpoint(800px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .room-card__content {
   margin-left: 70px;
+
+  @include breakpoint(800px) {
+    margin-left: 0;
+    margin-top: 40px;
+  }
 }
 
 .room-card__content-title {
@@ -20,6 +38,10 @@
   color: $black;
 
   margin-bottom: 25px;
+
+  @include breakpoint(420px) {
+    font-size: 28px;
+  }
 }
 
 .room-card__content-list {
@@ -27,6 +49,10 @@
   font-size: 16px;
   line-height: 19px;
   color: $black;
+
+  @include breakpoint(420px) {
+    font-size: 15px;
+  }
 }
 
 .room-card__list-item {
@@ -59,6 +85,21 @@
   display: flex;
   width: 100%;
   max-width: 600px;
+  position: relative;
+
+  @include breakpoint(1050px) {
+    max-width: 500px;
+    padding-bottom: 100px;
+  }
+
+  @include breakpoint(940px) {
+    max-width: 354px;
+  }
+
+  @include breakpoint(420px) {
+    max-width: 290px;
+    padding-bottom: 80px;
+  }
 }
 
 .slider-nav__img {
@@ -71,15 +112,47 @@
   cursor: pointer;
 
   border-radius: 4px;
+
+  @include breakpoint(1050px) {
+    max-width: 104px;
+    height: 78px;
+  }
+
+  @include breakpoint(420px) {
+    max-width: 86px;
+    height: 64px;
+  }
+}
+
+.room-card__slider-nav {
+  @include breakpoint(1050px) {
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+  }
 }
 
 .room-card__slider-nav .slick-slide + .slick-slide {
   margin-top: 27px;
+
+  @include breakpoint(1050px) {
+    margin-top: 0;
+  }
 }
 
 .room-card__slider-nav .slick-slide {
   width: 70px !important;
   opacity: 0.5;
+
+  @include breakpoint(1050px) {
+    margin-right: 21px;
+    width: 104px !important;
+  }
+
+  @include breakpoint(420px) {
+    margin-right: 16px;
+    width: 86px !important;
+  }
 }
 .room-card__slider-nav .slick-slide.slick-current {
   opacity: 1;
@@ -89,12 +162,27 @@
   width: 70px !important;
 
   border-radius: 4px;
+
+  @include breakpoint(1050px) {
+    width: 104px !important;
+  }
+
+  @include breakpoint(420px) {
+    width: 86px !important;
+  }
 }
 
 .room-card__slider-nav .slick-track {
   display: flex;
   flex-direction: column;
-  width: 70px;
+  width: 70px !important;
+
+  @include breakpoint(1050px) {
+    flex-direction: row;
+    z-index: 99;
+
+    width: 100% !important;
+  }
 }
 
 .room-card__slider-nav .slick-list {
@@ -109,10 +197,27 @@
   object-fit: cover;
 
   border-radius: 8px;
+
+  @include breakpoint(940px) {
+    max-width: 354px;
+    height: 288px;
+  }
+
+  @include breakpoint(420px) {
+    max-width: 290px;
+  }
 }
 
 .room-card__slider-for,
 .room-card__slider-for .item {
   max-width: 500px;
   border-radius: 8px;
+
+  @include breakpoint(940px) {
+    max-width: 354px;
+  }
+
+  @include breakpoint(420px) {
+    max-width: 290px;
+  }
 }
