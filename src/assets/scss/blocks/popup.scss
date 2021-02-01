@@ -7,6 +7,18 @@
   box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
   border-radius: 10px;
   background: url(/assets/images/popup-bg.svg) $white no-repeat left -25px top -20px;
+
+  @include breakpoint($md-bp) {
+    max-width: 502px;
+
+    padding: 60px 30px;
+  }
+
+  @include breakpoint($sm-bp) {
+    max-width: 290px;
+
+    padding: 60px 15px;
+  }
 }
 
 .main-popup__title {
@@ -17,6 +29,10 @@
   line-height: 33px;
 
   margin-bottom: 43px;
+
+  @include breakpoint($sm-bp) {
+    font-size: 24px;
+  }
 }
 
 .main-popup__input {
@@ -32,6 +48,14 @@
 
   padding: 16px 30px;
   margin-bottom: 20px;
+
+  @include breakpoint($sm-bp) {
+    padding: 16px 20px;
+  }
+
+  input &:focus {
+    border-radius: 25px;
+  }
 }
 
 .main-popup__date {
@@ -39,12 +63,30 @@
   color: $black;
 }
 
+.date-arrival--br {
+  @include breakpoint($sm-bp) {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
 .date-from--padding {
   padding: 0 10px 0 15px;
+
+  @include breakpoint($sm-bp) {
+    padding: 0;
+    padding-right: 5px;
+  }
 }
 
 .date-to--padding {
   padding: 0 10px;
+
+  @include breakpoint($sm-bp) {
+    padding-right: 5px;
+    padding: 0 2px;
+  }
 }
 
 .main-popup__input--date {
@@ -54,5 +96,10 @@
   &::-webkit-inner-spin-button,
   &::-webkit-calendar-picker-indicator {
     display: none;
+  }
+
+  @include breakpoint($sm-bp) {
+    max-width: 107px;
+    padding-left: 15px;
   }
 }

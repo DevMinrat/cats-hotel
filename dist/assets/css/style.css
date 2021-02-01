@@ -2775,9 +2775,20 @@ img.mfp-img {
 }
 
 .room-card {
-    padding-top: 25px;
-    margin-top: 45px;
+    padding-top: 146px;
     background: url(/assets/images/room-card-bg.svg) no-repeat top -50px right;
+}
+
+@media (max-width: 800px) {
+    .room-card {
+        padding-top: 136px;
+    }
+}
+
+@media (max-width: 420px) {
+    .room-card {
+        padding-top: 102px;
+    }
 }
 
 .room-card__inner {
@@ -2785,8 +2796,26 @@ img.mfp-img {
     display: flex;
 }
 
+@media (max-width: 800px) {
+    .room-card__inner {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
 .room-card__content {
     margin-left: 70px;
+}
+
+@media (max-width: 800px) {
+    .room-card__content {
+        margin-left: 0;
+        margin-top: 40px;
+    }
 }
 
 .room-card__content-title {
@@ -2797,11 +2826,23 @@ img.mfp-img {
     margin-bottom: 25px;
 }
 
+@media (max-width: 420px) {
+    .room-card__content-title {
+        font-size: 28px;
+    }
+}
+
 .room-card__content-list {
     font-family: Lato, sans-serif;
     font-size: 16px;
     line-height: 19px;
     color: #1a212f;
+}
+
+@media (max-width: 420px) {
+    .room-card__content-list {
+        font-size: 15px;
+    }
 }
 
 .room-card__list-item {
@@ -2833,6 +2874,27 @@ img.mfp-img {
     display: flex;
     width: 100%;
     max-width: 600px;
+    position: relative;
+}
+
+@media (max-width: 1050px) {
+    .room-card__slider {
+        max-width: 500px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 940px) {
+    .room-card__slider {
+        max-width: 354px;
+    }
+}
+
+@media (max-width: 420px) {
+    .room-card__slider {
+        max-width: 290px;
+        padding-bottom: 80px;
+    }
 }
 
 .slider-nav__img {
@@ -2846,13 +2908,55 @@ img.mfp-img {
     border-radius: 4px;
 }
 
+@media (max-width: 1050px) {
+    .slider-nav__img {
+        max-width: 104px;
+        height: 78px;
+    }
+}
+
+@media (max-width: 420px) {
+    .slider-nav__img {
+        max-width: 86px;
+        height: 64px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .room-card__slider-nav {
+        position: absolute;
+        z-index: 99;
+        bottom: 0;
+    }
+}
+
 .room-card__slider-nav .slick-slide + .slick-slide {
     margin-top: 27px;
+}
+
+@media (max-width: 1050px) {
+    .room-card__slider-nav .slick-slide + .slick-slide {
+        margin-top: 0;
+    }
 }
 
 .room-card__slider-nav .slick-slide {
     width: 70px !important;
     opacity: 0.5;
+}
+
+@media (max-width: 1050px) {
+    .room-card__slider-nav .slick-slide {
+        margin-right: 21px;
+        width: 104px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .room-card__slider-nav .slick-slide {
+        margin-right: 16px;
+        width: 86px !important;
+    }
 }
 
 .room-card__slider-nav .slick-slide.slick-current {
@@ -2864,12 +2968,33 @@ img.mfp-img {
     border-radius: 4px;
 }
 
+@media (max-width: 1050px) {
+    .room-card__slider-nav .item {
+        width: 104px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .room-card__slider-nav .item {
+        width: 86px !important;
+    }
+}
+
 .room-card__slider-nav .slick-track {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 70px;
+    width: 70px !important;
+}
+
+@media (max-width: 1050px) {
+    .room-card__slider-nav .slick-track {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        z-index: 99;
+        width: 100% !important;
+    }
 }
 
 .room-card__slider-nav .slick-list {
@@ -2886,10 +3011,37 @@ img.mfp-img {
     border-radius: 8px;
 }
 
+@media (max-width: 940px) {
+    .slider-for__img {
+        max-width: 354px;
+        height: 288px;
+    }
+}
+
+@media (max-width: 420px) {
+    .slider-for__img {
+        max-width: 290px;
+    }
+}
+
 .room-card__slider-for,
 .room-card__slider-for .item {
     max-width: 500px;
     border-radius: 8px;
+}
+
+@media (max-width: 940px) {
+    .room-card__slider-for,
+    .room-card__slider-for .item {
+        max-width: 354px;
+    }
+}
+
+@media (max-width: 420px) {
+    .room-card__slider-for,
+    .room-card__slider-for .item {
+        max-width: 290px;
+    }
 }
 
 .footer {
@@ -3090,6 +3242,20 @@ img.mfp-img {
     background: url(/assets/images/popup-bg.svg) #fffefd no-repeat left -25px top -20px;
 }
 
+@media (max-width: 769px) {
+    .main-popup {
+        max-width: 502px;
+        padding: 60px 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-popup {
+        max-width: 290px;
+        padding: 60px 15px;
+    }
+}
+
 .main-popup__title {
     text-align: center;
     font-family: Rubik, sans-serif;
@@ -3097,6 +3263,12 @@ img.mfp-img {
     font-size: 28px;
     line-height: 33px;
     margin-bottom: 43px;
+}
+
+@media (max-width: 575px) {
+    .main-popup__title {
+        font-size: 24px;
+    }
 }
 
 .main-popup__input {
@@ -3111,17 +3283,49 @@ img.mfp-img {
     margin-bottom: 20px;
 }
 
+@media (max-width: 575px) {
+    .main-popup__input {
+        padding: 16px 20px;
+    }
+}
+
+input .main-popup__input:focus {
+    border-radius: 25px;
+}
+
 .main-popup__date {
     font-size: 16px;
     color: #1a212f;
+}
+
+@media (max-width: 575px) {
+    .date-arrival--br {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
 
 .date-from--padding {
     padding: 0 10px 0 15px;
 }
 
+@media (max-width: 575px) {
+    .date-from--padding {
+        padding: 0;
+        padding-right: 5px;
+    }
+}
+
 .date-to--padding {
     padding: 0 10px;
+}
+
+@media (max-width: 575px) {
+    .date-to--padding {
+        padding-right: 5px;
+        padding: 0 2px;
+    }
 }
 
 .main-popup__input--date {
@@ -3131,6 +3335,13 @@ img.mfp-img {
 
 .main-popup__input--date::-webkit-inner-spin-button, .main-popup__input--date::-webkit-calendar-picker-indicator {
     display: none;
+}
+
+@media (max-width: 575px) {
+    .main-popup__input--date {
+        max-width: 107px;
+        padding-left: 15px;
+    }
 }
 
 .burger-menu {
