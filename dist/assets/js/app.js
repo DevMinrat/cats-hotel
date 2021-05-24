@@ -6097,6 +6097,14 @@ $(function () {
 
   // Menu
 
+  $(".nav__link").each(function () {
+    let link = $(this).attr("href");
+
+    if (link == window.location.pathname) {
+      $(this).addClass("active");
+    }
+  });
+
   $("[data-scroll]").on("click", function (event) {
     event.preventDefault();
 
@@ -6105,7 +6113,6 @@ $(function () {
       blockOffset = $(blockId).offset().top;
 
     $("#nav a").removeClass("active");
-    $this.addClass("active");
 
     $("html, body").animate(
       {
@@ -6164,4 +6171,25 @@ ymaps.ready(function () {
   myMap.geoObjects.add(myPlacemark);
 
   myMap.behaviors.disable("scrollZoom");
+});
+
+const links = document.querySelectorAll(".nav__link"),
+  sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  let scrollDistance = window.scrollY;
+
+  document.querySelectorAll("section").forEach((el, index) => {
+    if (scrollDistance >= el.offsetTop - 250) {
+      links.forEach((elem) => {
+        if (elem.classList.contains("active")) {
+          elem.classList.remove("active");
+        }
+      });
+
+      links[index].classList.add("active");
+    } else if (scrollDistance < 300) {
+      links[index].classList.remove("active");
+    }
+  });
 });
