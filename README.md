@@ -19,7 +19,7 @@ ____
 #### Демонстрация сайта 
 ____    
 
-![image](https://github.com/DevMinrat/drilling/blob/master/kjXSLLE47K.gif)
+![image](https://github.com/DevMinrat/cats-hotel/blob/master/1X4tf5Azyu.gif)
 
 #### Ссылки    
 ____   
